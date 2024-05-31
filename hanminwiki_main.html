@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="my-day-reportweb.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+    href="https://fonts.googleapis.com/css2?family=Nanum+Myeongjo&display=swap"
+    rel="stylesheet"
+    />
+    <link rel="stylesheet" href="front.css">
+    <style>
+        img {
+            width:10em;
+            height: 10em;
+        }
+        
+        h1 {
+            font-size:300%
+        }
+        th, td,ul, ol, li{
+            font-size:140%
+        }
+        p {
+            font-size: 200%;
+        }
+
+    </style>
+</head>
+<body>
+    <div>
+        <h1 style="text-align: center;">
+            <span style="color:rgb(87, 122, 205)">Hanmin</span>
+            <span style="color:rgb(139, 83, 236)">wiki</span>
+        </h1>
+    </div>
+    <!-- 좀 구린 메인 설명? 같은 느낌 -->
+    <div class="background_img" style="border: 5px solid; padding:5px; padding-bottom:100px">
+        <div>
+            <table style="background-color:white;color:black">
+                <tbody class="tableb">
+                    <tr>
+                        <th>이름</th>
+                        <td>한민 위키</td>
+                    </tr>
+                    <tr>
+                        <th>제작</th>
+                        <td>박현민, 신현빈, 이서준</td>
+                    </tr>
+                    <tr>
+                        <th>유형</th>
+                        <td>위키</td>
+                    </tr>
+                    <tr>
+                        <th>공개범위</th>
+                        <td>모든 한민고 재학생</td>
+                    </tr>
+                    <tr>
+                        <th>Ver</th>
+                        <td>1.0.0</td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+        
+    </div>
+    <hr>
+    <div>
+        <ol>
+            <li><a href="#introduce"style="color:blue">소개</a></li>
+            <li><a href="#function"style="color:blue">기능</a></li>
+            <li><a href="#purpose"style="color:blue">목적</a></li>
+            <li><a href="#made"style="color:blue">제작</a></li>
+            <li><a href="#behind"style="color:blue">비하인드</a></li>
+            <li><a href="#source"style="color:blue">출처</a></li>
+        </ol>
+    </div>
+    <hr>
+    <div id="introduce">
+        <p>소개: 너가 알아서 써라 할거 많고만
+            .
+            .
+            암 더
+            갱스터 예아
+        </p>
+        <p>/</p>
+        <p>/</p>
+        <p>/</p>
+        <p>/</p>
+    </div>
+    <div id="function">
+        <p>
+            기능: 이제 이것도 너가 쓰세요
+        </p>
+        <p>/</p>
+        <p>/</p>
+        
+    </div>
+    <div id="purpose">
+        <p>
+            목적: 이제 이것도 너가 쓰세요
+        </p>
+        <p>/</p>
+        <p>/</p>
+        
+    </div>
+    <div id="made">
+        <p>
+            제작: 이제 이것도 너가 쓰세요
+        </p>
+        <p>/</p>
+        <p>/</p>
+        
+    </div>
+    <div id="behind">
+        <p>
+            비하인드: 이제 이것도 너가 쓰세요
+        </p>
+        <p>/</p>
+        <p>/</p>
+        <div id="source">
+            <p>
+                출처: 이제 이것도 너가 쓰세요
+            </p>
+            <p>/</p>
+            <p>/</p>
+            
+        </div>
+    </div>
+
+
+    <!-- 이거는 걍 야간모드임 -->
+    <input
+        type="button"
+        value="night"
+        onclick="if(this.value==='night') {
+        document.querySelector('body').style.backgroundColor='black';
+        document.querySelector('body').style.color='powderblue';
+        document.querySelector('.nightvision').value= 'morning';
+        document.querySelector('.nightalert').style.display= 'block';
+        }else{document.querySelector('body').style.backgroundColor='white';
+        document.querySelector('body').style.color='black';
+        document.querySelector('.nightvision').value= 'night';
+        document.querySelector('.nightalert').style.display= 'none';}"
+        class="nightvision"
+    />
+    <p class="nightalert">
+        -------------(night screen mode turned on)-------------
+    </p>
+</body>
+</html>
